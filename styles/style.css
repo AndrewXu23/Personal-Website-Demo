@@ -9,6 +9,7 @@ h1 {
     text-align: center;
   }
 
+/* I'd recommend having different rules for these three header types so they can be visually distinguished from each other */
   h4 {
     font-family: "Times New Roman", Times, serif;
     font-size: 60px;
@@ -59,14 +60,13 @@ h2 {
     text-align: center;
 }
 
-.tw {
-  margin: 0;
-  text-align: center;
-  height: 40px;
-  width: 40px;
-}
-
-.ins {
+/* I think it's easier to understand if they're clumped like this, since the same rules apply to each.
+   These could be even further combined into a .social-media class that could be applied to each individually
+   or possibly to the ul they're part of */
+.tw,
+.ins,
+.yt,
+.gh {
   margin: 0;
   text-align: center;
   height: 40px;
@@ -80,45 +80,15 @@ h2 {
   width: 80px;
 }
 
-.lab {
-  max-width: 100%;
-  height: auto;
-}
-
-.int {
-  max-width: 100%;
-  height: auto;
-}
-
-.nft {
-  max-width: 100%;
-  height: auto;
-}
-
-.prj {
-  max-width: 100%;
-  height: auto;
-}
-
+/* Similar to social media classes */
+.lab,
+.int,
+.nft,
+.prj,
 .esp {
   max-width: 100%;
   height: auto;
 }
-
-.yt {
-  margin: 0;
-  text-align: center;
-  height: 40px;
-  width: 40px;
-}
-
-.gh {
-  margin: 0;
-  text-align: center;
-  height: 40px;
-  width: 40px;
-}
-
 
 h3 {
   margin: 0;
