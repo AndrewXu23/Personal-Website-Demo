@@ -44,6 +44,8 @@
       <h1>Andrew's Personal Page</h1>
       <h2>Wait let us get it again</h2>
       <h3>with a little more personality...</h3>
+      <!-- The JS isn't activated for this because it latched onto the first button it found, which is the one in the navbar. 
+            You could assign an id like "clickme" to this element and then change the main.js to use getElementById() instead of querySelector().-->
       <h3><button>Click</button></h3><br>
 
 
@@ -107,7 +109,10 @@
 
       <h3>Recent Project</h3>
     </div>
-    <script src="scripts/main.js"> <button>Change user</button>
+    <!-- The HTML needs to come before the JS or it won't show up.-->
+    <!-- The JS won't run on this button though (see comment on "Click Me" button). -->
+    <button>Change user</button>
+    <script src="scripts/main.js">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
